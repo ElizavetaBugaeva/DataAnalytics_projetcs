@@ -30,4 +30,4 @@ final as (
     left join customer_orders using (customer_id)
 )
 select * from final
-
+where customer_id is not null
